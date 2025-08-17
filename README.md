@@ -1,5 +1,6 @@
 # Hello!
 open LVL_Examples to test plugin out
+<img src="Thumbnail3.png">
 
 ## How to set up:
   1.Select your meshes material and open it in material editor.
@@ -8,7 +9,7 @@ open LVL_Examples to test plugin out
   
   3.Use "getMaterialAttributes" node top get "normal" and "worldPositionOprion" of function and connect it to normal and worldPositionOffset. If you want to use your own normal map use "blendAngleCorrectedNormals" to use both.
   
-  you can see how final result should look like here [<img src="example.png">](https://link-to-your-URL/)
+  you can see how final result should look like here <img src="example.png">
   
   unfortunatly you have to do this for every material you want to be deformable.
 
