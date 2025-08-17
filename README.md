@@ -3,28 +3,29 @@ open LVL_Examples to test plugin out
 <img src="Thumbnail3.png">
 
 # How to set up:
-  1.Select your meshes material and open it in material editor.
+  1. Select your mesh material and open it in the material editor.
   
-  2.Add material function and select collectionDeformation function.
+  2. Add a material function and select the collection Deformation function.
+
   
-  3.Use "getMaterialAttributes" node top get "normal" and "worldPositionOprion" of function and connect it to normal and worldPositionOffset. If you want to use your own normal map use "blendAngleCorrectedNormals" to use both.
 
-  4. Place your deformer and add new item to "targets" array, then select your target mesh.
+  3. Use the "getMaterialAttributes" node to get the "normal" and "worldPositionOprion" of function and connect it to normal and worldPositionOffset. If you want to use your own normal map, use "blendAngleCorrectedNormals" to use both.
 
-  5. if needed enable physics and eather choose profile or set up your own in "deformerPhysics" tab.
+  4. Place your deformer and add a new item to the "targets" array, then select your target mesh.
 
-  6. Deformer will automaticly pick child scene components of your targets, as well as all blueprint static meshes if deformer is inside blueprint.
+  5. If needed, enable physics, either choose a profile or set up your own in the "deformed Physics" tab.
 
-  7. To make mesh ignore deofrmers add "ignore" tag to component, or tag with name of deformer you want it to ignore.
+  6. The deformer will automatically pick child scene components of your targets, as well as all blueprint static meshes if the deformer is inside the blueprint.
 
-  8. Strength value defines privilege of which deformer will have greater affect if two of them are active at the same aerea.
+  7. To make the mesh ignore performers, add an "ignore" tag to the component, or a tag with the name of the performer you want them to ignore.
 
-  9. "IsDisplacingDeformer" decides wether or not deformer will be displacing all inner verteces outside acting lice crator.
+  8. Strength value defines the privilege of which a performer will have a greater effect if two of them are active in the same area.
 
-     
+  9. "IsDisplacingDeformer" decides whether the deformer will be displacing all inner vertebrae outside the acting licrator.
+
   you can see how final result should look like here <img src="example.png">
   
-  ## unfortunatly you have to do this for every material you want to be deformable.
+## Unfortunately, you have to do this for every material you want to be deformable.
 
 # important functions:
  ### BP_DEFORMER Funciotns:
