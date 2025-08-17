@@ -2,18 +2,35 @@
 open LVL_Examples to test plugin out
 <img src="Thumbnail3.png">
 
-## How to set up:
+# How to set up:
   1.Select your meshes material and open it in material editor.
   
   2.Add material function and select collectionDeformation function.
   
   3.Use "getMaterialAttributes" node top get "normal" and "worldPositionOprion" of function and connect it to normal and worldPositionOffset. If you want to use your own normal map use "blendAngleCorrectedNormals" to use both.
-  
+
+  4. Place your deformer and add new item to "targets" array, then select your target mesh.
+
+  5. if needed enable physics and eather choose profile or set up your own in "deformerPhysics" tab.
+
+  6. Deformer will automaticly pick child scene components of your targets, as well as all blueprint static meshes if deformer is inside blueprint.
+
+  7. To make mesh ignore deofrmers add "ignore" tag to component, or tag with name of deformer you want it to ignore.
+
+  8. Strength value defines privilege of which deformer will have greater affect if two of them are active at the same aerea.
+
+  9. "IsDisplacingDeformer" decides wether or not deformer will be displacing all inner verteces outside acting lice crator.
+
+     
   you can see how final result should look like here <img src="example.png">
   
   unfortunatly you have to do this for every material you want to be deformable.
 
-## important functions:
+## 
+
+# How to setupPhysics
+
+# important functions:
  ### BP_DEFORMER Funciotns:
    -resetDeformer: used to reset static parameters of material, therefore resetting all the deformations by the deformer
    -updateAllStartParameters: Same but will not be adding any new targets
