@@ -24,11 +24,7 @@ open LVL_Examples to test plugin out
      
   you can see how final result should look like here <img src="example.png">
   
-  unfortunatly you have to do this for every material you want to be deformable.
-
-## 
-
-# How to setupPhysics
+  ## unfortunatly you have to do this for every material you want to be deformable.
 
 # important functions:
  ### BP_DEFORMER Funciotns:
